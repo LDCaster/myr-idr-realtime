@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kurs Real-time MYR & IDR (Estimasi TNG)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Kurs Real-time MYR & IDR</h1>
+    <p id="rate">Memuat kurs...</p>
+    <p id="last-update"></p>
+    <p id="note">
+      * Kurs berdasarkan data dari exchangerate-api.com<br />
+      * Estimasi biaya konversi TNG sekitar 1% dipotong dari kurs<br />
+      * Data diperbarui setiap 1 menit secara otomatis
+    </p>
+
+    <div class="calculator">
+      <label for="input-myr">Masukkan jumlah MYR (Ringgit Malaysia):</label>
+      <input
+        type="number"
+        id="input-myr"
+        placeholder="Contoh: 100"
+        min="0"
+        step="any"
+      />
+      <p class="result">Hasil dalam IDR: <span id="result-idr">-</span></p>
+
+      <label for="input-idr">Masukkan jumlah IDR (Rupiah):</label>
+      <input
+        type="number"
+        id="input-idr"
+        placeholder="Contoh: 350000"
+        min="0"
+        step="any"
+      />
+      <p class="result">Hasil dalam MYR: <span id="result-myr">-</span></p>
+    </div>
+
+    <footer>© 2025 - Pantau kurs sederhana</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

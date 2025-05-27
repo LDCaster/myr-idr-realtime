@@ -1,0 +1,106 @@
+/* style.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d8f0e4; /* warna hijau pastel kalem */
+  color: #344055;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+
+  /* Pola dots halus */
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+h1 {
+  color: #3aafa9; /* hijau toska kalem */
+  margin-bottom: 0.3em;
+  text-shadow: 1px 1px 3px rgba(58, 175, 169, 0.4);
+}
+
+#rate {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2b7a78; /* hijau toska tua */
+  margin: 0.5em 0;
+  min-height: 3.5rem;
+  text-shadow: 1px 1px 2px rgba(43, 122, 120, 0.3);
+}
+
+#note {
+  font-size: 0.95rem;
+  color: #5c6b73; /* abu abu biru */
+  max-width: 360px;
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.4;
+}
+
+#last-update {
+  font-size: 0.85rem;
+  color: #7a8a91; /* abu abu soft */
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.85rem;
+  color: #6b7b83;
+}
+
+.calculator {
+  margin-top: 2em;
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(58, 175, 169, 0.2);
+  width: 350px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.calculator:hover {
+  box-shadow: 0 8px 22px rgba(58, 175, 169, 0.35);
+}
+
+.calculator label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  color: #386c6a;
+}
+
+.calculator input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1.25rem;
+  border: 2px solid #a7c7c5;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  color: #344055;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculator input[type="number"]:focus {
+  outline: none;
+  border-color: #3aafa9;
+  box-shadow: 0 0 8px rgba(58, 175, 169, 0.5);
+}
+
+.calculator p.result {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27666b;
+  margin: 0 0 20px 0;
+  min-height: 2em;
+}
